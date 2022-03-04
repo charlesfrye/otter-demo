@@ -13,4 +13,5 @@ fi
 
 mkdir -p $TO_DIR
 cp $FROM_DIR/student/* $TO_DIR
+rm $TO_DIR/foo.py && touch $TO_DIR/foo.py # fake filtering
 unzip -o $FROM_DIR/autograder/*-autograder_*.zip "tests/*" -d $TO_DIR
